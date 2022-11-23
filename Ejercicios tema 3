@@ -1,0 +1,32 @@
+//ejercicios de introduccion a la programacion de OpenBootcamp por Luciano Laco @0Laco
+public class Main {
+  
+  public static void main(String[] args) {
+    suma(5,10,20);
+  
+    Coche coche = new Coche();
+      
+    coche.agregarPuerta();
+    System.out.println("Puertas: " + coche.puertas);
+      
+  }
+  
+  
+//primera parte
+  public static void suma(int num1, int num2, int num3) {
+    int resultado;
+    
+    resultado = num1 + num2 + num3;
+    System.out.println("Suma de los 3 numeros: " + resultado);
+  }
+}
+
+
+//segunda parte
+class Coche {
+  public int puertas = 4;
+    
+  public void agregarPuerta() {
+    this.puertas++;
+  }
+}
